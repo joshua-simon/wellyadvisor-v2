@@ -4,8 +4,450 @@
     font-family: Helvetica;
     src: url("./assets/HelveticaNeue-Light.otf") format("opentype");
 }
-
 body{
+max-width: 1400px;
+margin: 20px auto;
+padding: 0 20px;
+font-family: 'Sofia Pro';
+background-color: #e9ebee;
+}
+
+/* Header */
+header{
+height:4rem;
+background-color: white;
+border-radius: 5px;
+}
+
+.container{
+display:flex;
+justify-content: space-between;
+height:100%;
+}
+
+.logo{
+display:flex;
+justify-content: center;
+padding-left:1%;
+}
+
+.logo p{
+display:flex;
+align-items: center;
+margin-left:5%;
+color:#587a25;
+font-size: x-large;
+}
+
+.container-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transform: translateX(-15%);
+}
+
+.container-links img{
+    width:25px;
+    height:25px;
+    padding:5px;
+}
+
+.login-register{
+    text-decoration: none;
+    padding:2%;
+    transform: translateX(-10%);
+    background-color:rgb(110, 110, 248);
+    color:white;
+    border-radius: 5%;
+    margin:2%;
+    font-size: small;
+}
+
+
+
+/* Options */
+
+.options-container{
+    height:7em;
+    background-color: white;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    margin-top:1em;
+    padding:1em;
+}
+
+.options-item{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 160px;
+    border: 1px solid black;
+    width:10%;
+    border-radius:5%;
+    margin:0.5em;
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+}
+
+.options-item img{
+    height:30px;
+    width:30x;
+}
+
+.options-item:hover{
+background-color: #587a25;
+color:white;
+}
+
+
+
+/* Recommended */
+
+.venueCard-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-row-gap:1%;
+    grid-column-gap: 1%;
+    background-color: white;
+    /* margin-top: 1em; */
+    padding:3%;
+    border-radius: 1%;
+    margin-bottom:5em;
+}
+
+
+.venueCard-item img {
+    height:60%;
+    width:100%;
+    aspect-ratio: 1;
+}
+
+.venueCard-item img:hover {
+opacity:60%;
+}
+
+.venueCard-item:hover{
+cursor: pointer;
+}
+
+.venueCard-info p{
+ padding:0;
+ margin:0;
+}
+
+.venueCard-ratings{
+color:#7cac35;
+font-family: Helvetica;
+}
+
+.venueCard-header{
+    font-size: large;
+}
+
+.venueCard-type{
+    color:#83888d;
+    font-size: small;
     font-family: Helvetica;
-    background-color: #e9ebee;
+}
+
+.recommended {
+    font-size: x-large;
+    color: #79a734;
+    background-color: white;
+    margin-bottom:0;
+    padding-top:20px;
+    padding-left:3%;
+}
+
+
+/* Venue page */
+
+.venue-page-top{
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top:0.5em;
+    padding:1%;
+}
+
+.venue-page-mid h2 {
+color: #587a25;
+}
+
+.venue-page-top h1 {
+    color: #587a25;
+}
+
+.header-photo{
+    height:10em;
+    width:14em;
+}
+.inner-flex-one{
+    display:flex;
+    flex-direction: row;
+}
+
+.inner-flex-one p{
+padding-right:2%;
+padding-left:2px;
+font-family: Helvetica;
+}
+
+.inner-flex-two{
+    display:flex;
+    flex-direction: row;
+    transform: translateY(-25%);
+    font-family: Helvetica;
+    
+}
+
+.inner-flex-two  img{
+    padding-right:0.5%;
+    height:25px;
+    width:25px;
+    transform: translateY(55%);
+    }
+    
+.inner-flex-two p{
+    padding-right:1%;
+}
+
+.venue-page-mid{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    margin-top:1em;
+}
+
+.venue-page-section{
+    background-color:white;
+    min-width:auto; 
+    padding-left:1em;
+    padding-right:1em;
+}
+
+.ratings{
+    display:flex;
+    flex-direction:column;
+    font-family: Helvetica;
+    border-top: 1px solid rgb(219, 211, 211);
+}
+
+.ratings-item{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.details-container{
+    display:flex;
+    flex-direction:column;
+    font-family: Helvetica;
+}
+
+
+.signup-container{
+    width:20%;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    margin-top:10%;
+    border: 1px solid rgb(179, 176, 176);
+    padding:1%;
+    background:white;
+    align-items: center;
+    border-radius: 2%;
+}
+
+.signup-container form{
+    display:flex;
+    flex-direction: column;
+    width:80%;
+    margin-top:1em;
+}
+
+.signup-container input {
+    margin:2%;
+    border:1px solid rgb(179, 176, 176);
+    border-radius: 2%;
+    padding:2%;
+}
+
+.signup-container button {
+    background-color: rgb(78, 78, 241);
+    border: none;
+    font-family: 'Sofia Pro';
+    color:white;
+    border-radius:3%;
+    padding:2%;
+    cursor: pointer;
+}
+
+.signup-container p {
+    color:#587a25;
+    font-size: x-large;
+}
+
+/* Venue page review section */
+
+.review-section-header{
+    display:flex;
+    flex-direction: row;
+    background-color: white;
+    margin-top: 1em;
+    margin-right:10%;
+    padding:1%;
+    color:#587a25;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid rgb(223, 217, 217)
+}
+
+.review-section-header a{
+    text-decoration: none;
+    background-color:rgb(78, 78, 241);
+    color:white;
+    letter-spacing: 1px;
+    padding:1%;
+    border-radius: 2%;
+}
+
+.review-section-header a p{
+    margin:0;
+}
+
+.review-notRegistered{
+    text-decoration: none;
+    background-color:rgb(78, 78, 241);
+    color:white;
+    letter-spacing: 1px;
+    padding:1%;
+    border-radius: 2%;
+}
+
+.review-section-reviews{
+margin-bottom:5em;
+
+}
+
+.review-section-reviews-container{
+    display:flex;
+    flex-direction: row;
+    background-color: white;
+    margin-right:10%;
+    padding:1%;
+    border-bottom:1px solid rgb(223, 217, 217);
+}
+
+
+.review-section-reviews-userDetails{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    color:#587a25;
+    min-width:8em;
+    justify-content: center;
+}
+
+.review-section-reviews-userDetails img {
+    height:3em;
+    width:3em;
+    border-radius: 50%;
+}
+
+.review-section-reviews-reviewDetails{
+    display:flex;
+    flex-direction: column;
+    margin-left:0.5em;
+    font-family: Helvetica;
+
+}
+
+.child-item{
+    margin-bottom:0.3em;
+    margin-top:0.3em;
+}
+
+.review-section-reviews-reviewDetails h3 {
+    font-family: 'Sofia Pro';
+    color:#587a25;
+}
+
+
+/* Write review section */
+
+.write-review-top{
+    background-color: white;
+    /* margin-left:10%;
+    margin-right:10%; */
+    margin-top:1em;
+    border-radius:1%;
+}
+
+.write-review-top-img{
+    display:flex;
+    flex-direction: row;
+    height:10em;
+    width:90%;
+    padding:2%;
+}
+
+.write-review-top-img img {
+    aspect-ratio: 1;
+}
+
+.write-review-top-text{
+    display:flex;
+    flex-direction:column;
+    margin-left:5%;
+    justify-content: center;
+}
+
+.write-review-top-text p{
+    margin-top:1%;
+    margin-bottom:1%;
+    color:#587a25;
+}
+
+.write-review-form form{
+    display:flex;
+    flex-direction: column;
+    width:30%;
+    background: white;
+    padding:2%;
+    margin-top: 1em;
+    border-radius: 2%;
+    font-family: Helvetica;
+}
+
+.write-review-form label{
+  margin:5%;
+}
+
+.write-review-form h2{
+font-family: 'Sofia Pro';
+color:#587a25;
+}
+
+.write-review-form form button{
+    border:none;
+    background-color:rgb(71, 71, 226);
+    color:white;
+    font-family: 'Sofia Pro';
+    letter-spacing: 1px;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:2em;
+   cursor: pointer;
+}
+
+.write-review-form form select{
+    padding:2%;
+    font-family: Helvetica;
 }
